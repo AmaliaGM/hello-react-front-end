@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Worlds(props) {
+function Worlds(worlds) {
   return (
     <div>
-      {props.worlds.map((world) => (
+      {worlds.map((world) => (
         <div key={world.id}>
           <p>{world.title}</p>
           <h2>{world.body}</h2>
