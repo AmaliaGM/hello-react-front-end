@@ -14,7 +14,7 @@
   "extends": [
     "airbnb",
     "airbnb-base",
-    "eslint:recommended",
+    "eslint:recommended"
   ],
   "rules": {
     "react/prop-types": "off",
