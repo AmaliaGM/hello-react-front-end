@@ -16,7 +16,7 @@
     "airbnb",
     "airbnb-base",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "react/prop-types": "off",
