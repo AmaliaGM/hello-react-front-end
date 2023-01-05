@@ -27,10 +27,9 @@ function App() {
     <div className="App">
       <h1> Hello </h1>
       <p>{worlds.body}</p>
-
       <button
         type="button"
-        onClick={() => setWorlds(
+        onClick={() => setWorlds.body(
           worlds[parseInt(Math.random() * worlds.length, 10)],
         )}
       >
