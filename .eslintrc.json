@@ -9,12 +9,14 @@
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2020,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.eslint.json"
   },
   "extends": [
     "airbnb",
     "airbnb-base",
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
   ],
   "rules": {
     "react/prop-types": "off",
