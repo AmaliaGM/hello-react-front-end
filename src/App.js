@@ -25,16 +25,18 @@ function App() {
 
   return (
     <div className="App">
-    <h1> Hello </h1>
-    <p>{worlds.body}</p>
+      <h1> Hello </h1>
+      <p>{worlds.body}</p>
 
-    <button type="button" onClick={() => setWorlds(
-      worlds[parseInt(Math.random() * worlds.length, 10)],
-    )
-    }>
-      Change the World
-    </button>
-  </div>
+      <button
+        type="button"
+        onClick={() => setWorlds(
+          worlds[parseInt(Math.random() * worlds.length, 10)],
+        )}
+      >
+        Change the World
+      </button>
+    </div>
 
   );
 }

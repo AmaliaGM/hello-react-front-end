@@ -1,13 +1,14 @@
-function Worlds(props) {
+function Worlds(props, greet) {
+  const { greet } = props.worlds;
   return (
     <div>
-      {props.worlds.map((world) => (
-          <div key={world.id}>
-            <p>{world.title}</p>
-            <h2>{world.body}</h2>
-          </div>
+      {greet.map((id, title, body) => (
+        <div key={id}>
+          <p>{title}</p>
+          <h2>{body}</h2>
+        </div>
       ))}
-  </div>
+    </div>
   );
 }
 
