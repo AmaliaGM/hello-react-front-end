@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint app"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +37,17 @@
       "last 1 safari version"
     ]
   },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "lint:fix": "eslint --fix",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.11",
+    "or": "^0.2.0",
+    "yarn": "^1.22.19"
+  },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": ".eslintrc.js",
   "repository": {
@@ -47,8 +59,5 @@
   "bugs": {
     "url": "https://github.com/AmaliaGM/hello-react-front-end/issues"
   },
-  "homepage": "https://github.com/AmaliaGM/hello-react-front-end#readme",
-  "devDependencies": {
-    "eslint-plugin-react": "^7.31.11"
-  }
+  "homepage": "https://github.com/AmaliaGM/hello-react-front-end#readme"
 }
