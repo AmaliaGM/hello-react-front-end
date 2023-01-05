@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const API_URL = 'http://localhost:3000/api/v1/worlds';
 
@@ -24,18 +24,18 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
-      <h1> Hello </h1>
-      <p>{worlds.body}</p>
-      <button
-        type='button'
-        onClick={() => setWorlds(
-          worlds[parseInt(Math.random() * worlds.length, 10)],
-        )}
-      >
-        Change the World
+  <div className="App">
+    <h1> Hello </h1>
+    <p>{worlds.body}</p>
+
+    <button onClick={() => setWorlds(
+      worlds[parseInt(Math.random() * worlds.length, 10)],
+    )
+      }>
+          Change the World
       </button>
-    </div>
+  </div>
+
   );
 }
 
