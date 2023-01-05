@@ -12,9 +12,9 @@
     "sourceType": "module"
   },
   "extends": [
-    "eslint:recommended",
     "airbnb",
-    "airbnb-base"
+    "airbnb-base",
+    "eslint:recommended",
   ],
   "rules": {
     "react/prop-types": "off",
