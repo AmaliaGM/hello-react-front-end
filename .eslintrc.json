@@ -1,38 +1,27 @@
 {
-  "root": true,
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "jest": true
   },
-  "plugins": ["import"],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "project": "./tsconfig.eslint.json"
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
-  "extends": [
-    "airbnb",
-    "airbnb-base",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "plugins": ["react"],
   "rules": {
-    "react/prop-types": "off",
-    "react/jsx-filename-extension": [1, {
-      "extensions": [".js", ".jsx"]}],
-    "no-shadow": "off",
-    "no-param-reassign": "off",
-    "eol-last": "off"
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
+    "no-shadow": "off"
   },
   "ignorePatterns": [
     "dist/",
     "build/"
-  ],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  }
+  ]
 }
