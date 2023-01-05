@@ -5,6 +5,7 @@
     "es6": true,
     "jest": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
@@ -15,6 +16,8 @@
     }
   },
   "extends": [
+    "airbnb",
+    "airbnb-base",
     "eslint:recommended",
     "plugin:react/recommended"
   ],
@@ -23,8 +26,7 @@
       "extensions": [".js", ".jsx"]}],
     "no-shadow": "off",
     "no-param-reassign": "off",
-    "eol-last": "off",
-    "react/prop-types": "off"
+    "eol-last": "off"
   },
   "ignorePatterns": [
     "dist/",
