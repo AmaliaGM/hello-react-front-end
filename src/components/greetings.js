@@ -4,9 +4,9 @@ function Worlds(props) {
   Worlds.propTypes = {
     worlds: PropTypes.arrayOf(
       PropTypes.shape({
-        id: PropTypes.integer,
-        title: PropTypes.string,
-        body: PropTypes.string,
+        id: PropTypes.integer.isRequired,
+        title: PropTypes.string.isRequired,
+        body: PropTypes.string.isRequired,
       }),
     ),
   };

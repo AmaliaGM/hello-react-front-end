@@ -7,6 +7,7 @@ const API_URL = 'http://localhost:3000/api/v1/worlds';
 function getAPIData() {
   return axios.get(API_URL).then((response) => response.data);
 }
+
 function App() {
   const [worlds, setWorlds] = useState({
     title: 'greeting1',
@@ -29,8 +30,9 @@ function App() {
       <p>{worlds.body}</p>
       <button
         type="button"
-        onClick={() => setWorlds.body(
+        onClick={() => setWorlds(
           worlds[parseInt(Math.random() * worlds.length, 10)],
+          window.location.reload(),
         )}
       >
         Change the World
