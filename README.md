@@ -51,8 +51,10 @@ REQUIRED SECTIONS:
   - Ruby on Rails
   - Postgres SQL
   - HTML
-<!-- Features -->
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
