@@ -29,7 +29,7 @@
 
 # 📖 Hello Rails Frontend <a name="about-project"></a>
 
-> Link to [Hello-React-Frontend](https://github.com/AmaliaGM/hello-rails-back-end)
+> Link to [Hello-React-Backend](https://github.com/AmaliaGM/hello-rails-back-end)
 
 ## 🛠 Built With <a name="built-with"></a>
   - Ruby on Rails
